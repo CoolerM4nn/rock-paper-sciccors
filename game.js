@@ -2,6 +2,12 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+function game() {
+  for (let i = 0; i < 5; i++) {
+    console.log(roundOfRPS());
+  }
+}
+
 function roundOfRPS() {
   const playerChoice = getPlayerChoice();
   const computerChoice = getComputerChoice();
@@ -73,4 +79,4 @@ function getComputerChoice() {
   }
 }
 
-console.log(roundOfRPS());
+game();
